@@ -39,7 +39,7 @@ expected worst-case space complexity is O(N), beyond input storage (not counting
 Elements of input arrays can be modified.
 {% endhighlight %}
 
-###Solution
+###Solution Python
 
 {% highlight python %}
 def solution(A):
@@ -57,4 +57,22 @@ def solution(A):
 	else:
 	    return 0
 	return -1
+{% endhighlight %}
+
+###Solution Java
+
+{% highlight java %}
+public int equi(int[] A) {
+  long sum = 0;
+  long leftSum = 0;
+  for (int aA : A) {
+    leftSum += aA;
+  }
+  for (int i = 0; i < A.length; i++) {
+    if (sum == leftSum - A[i]) return i;
+    sum += A[i];
+    leftSum -= A[i];
+  }
+  return -1;
+}
 {% endhighlight %}

@@ -49,11 +49,7 @@ Elements of input arrays can be modified.
 {% highlight go %}
 package solution
 
-// you can also use imports, for example:
 import "math"
-
-// you can use fmt.Println for debugging purposes, e.g.
-// fmt.Println("this is a debug message")
 
 func Solution(A []int) int {
     N := len(A)
