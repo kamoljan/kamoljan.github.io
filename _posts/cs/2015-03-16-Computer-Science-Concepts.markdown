@@ -25,7 +25,7 @@ Example output for "Madam, I'm Adam":   madA m'I ,madaM
     return out;
   }
 
-  // Faster one
+  // Faster one (the same as Steve Yegge's one)
   private static String myReversFaster(String str) {
     int length = str.length(), last = length - 1;
     char[] chars = str.toCharArray();
@@ -37,5 +37,16 @@ Example output for "Madam, I'm Adam":   madA m'I ,madaM
       chars[last - i] = c;
     }
     return new String(chars);
+  }
+
+  // Another alternative with StringBuilder
+  public static String SwamiReverse(StringBuilder str) {
+    //return str.reverse().toString();
+    for (int i = 0, j = str.length()-1; i < str.length()/2; i++, j--) {
+      char c = str.charAt(i);
+      str.setCharAt(i, str.charAt(j));
+      str.setCharAt(j, c);
+    }
+    return str.toString();
   }
 {% endhighlight %}
