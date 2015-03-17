@@ -22,7 +22,7 @@ Output: 0, 1, 1, 2, 3
   static String fib(int n) {
     int r = 0;
     int a = 0, b = 1, c;
-    if (n == 0) {
+    if (n <= 0) {
       return "The N should be equal or greater than 1";
     } else if (n == 1) {
       return "0";
