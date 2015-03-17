@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Computer Science Concepts"
+title:  "CS Concepts (Coding): Write function to compute Nth fibonacci number"
 date:   2015-03-17 14:35:18
 categories: Coding
 ---
@@ -19,26 +19,22 @@ Output: 0, 1, 1, 2, 3
 {% endhighlight %}
 
 {% highlight java %}
-  static String fib(int n) {
-    int r = 0;
-    int a = 0, b = 1, c;
-    if (n <= 0) {
-      return "The N should be equal or greater than 1";
+  static int fib(int n) {
+    int a = 0, b = 1, c = 0;
+    if ((n <= 0) || (n >= Integer.MAX_VALUE)) {
+      return -1;
     } else if (n == 1) {
-      return "0";
+      return 0;
+    } else if (n == 2) {
+      return 1;
     } else {
-      for (int i = 0; i < n; i++) {
-        if (i == 0 || i == 1) {
-          r = i;
-        } else {
-          c = a + b;
-          a = b;
-          b = c;
-          r = c;
-        }
+      for (int i = 2; i < n; i++) {
+        c = a + b;
+        a = b;
+        b = c;
       }
     }
-    return "" + r;
+    return c;
   }
 {% endhighlight %}
 

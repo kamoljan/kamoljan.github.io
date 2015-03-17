@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Computer Science Concepts"
+title:  "CS Concepts (Coding): Write a function to reverse a string"
 date:   2015-03-16 14:35:18
 categories: Coding
 ---
