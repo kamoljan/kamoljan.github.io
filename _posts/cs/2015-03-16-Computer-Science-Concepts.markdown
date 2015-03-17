@@ -2,7 +2,7 @@
 layout: post
 title:  "Computer Science Concepts"
 date:   2015-03-16 14:35:18
-categories: jekyll update
+categories: Coding
 ---
 
 ###[Steve Yegge Blog](https://sites.google.com/site/steveyegge2/five-essential-phone-screen-questions)
