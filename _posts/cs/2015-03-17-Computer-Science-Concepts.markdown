@@ -11,25 +11,34 @@ categories: Coding
 
 {% highlight java %}
 Example 2:  Write function to compute Nth fibonacci number.
-Example output: 0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55
+Input:  1, 2, 3, 4, 5
+        |  |  |  |  |
+        v  v  v  v  v
+Output: 0, 1, 1, 2, 3
+
 {% endhighlight %}
 
 {% highlight java %}
-  static void fib(int n) {
+  static String fib(int n) {
+    int r = 0;
     int a = 0, b = 1, c;
-    for (int i = 0; i <= n; i++) {
-      if (i == 0 || i == 1) {
-        if (i != 0) {
-          System.out.print(", ");
+    if (n == 0) {
+      return "The N should be equal or greater than 1";
+    } else if (n == 1) {
+      return "0";
+    } else {
+      for (int i = 0; i < n; i++) {
+        if (i == 0 || i == 1) {
+          r = i;
+        } else {
+          c = a + b;
+          a = b;
+          b = c;
+          r = c;
         }
-        System.out.print(i);
-      } else {
-        c = a + b;
-        System.out.print(", " + c);
-        a = b;
-        b = c;
       }
     }
+    return "" + r;
   }
 {% endhighlight %}
 
