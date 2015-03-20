@@ -1,4 +1,3 @@
-
 ---
 layout: post
 title:  "CS Concepts (Coding): Write a function that sums up integers from a text file, one int per line."
