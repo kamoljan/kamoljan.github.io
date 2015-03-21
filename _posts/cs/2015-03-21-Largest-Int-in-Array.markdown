@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "CS Concepts (Coding): Find the largest int value in an int array."
-date:   2015-03-21 14:35:18
+date:   2015-03-21 20:35:18
 categories: Coding
 ---
 
@@ -30,5 +30,5 @@ Example 6:  Find the largest int value in an int array.
       }
     }
     return max;
-  }s
+  }
 {% endhighlight %}
