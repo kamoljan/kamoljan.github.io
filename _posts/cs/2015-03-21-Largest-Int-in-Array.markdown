@@ -15,6 +15,16 @@ Example 6:  Find the largest int value in an int array.
 {% endhighlight %}
 
 {% highlight java %}
+  int b[] = new int[100000000];
+
+  @Before public void setUp() throws Exception {
+    myClass = new MyClass();
+    Random random = new Random();
+    for (int i = 0; i < b.length; i++) {
+      b[i] = random.nextInt();
+    }
+  }
+
   // 31378000-39787000
   int largestIntInArrayFaster(int a[]) {
     int len = a.length;
