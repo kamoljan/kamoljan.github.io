@@ -5,11 +5,6 @@ date:   2015-03-16 14:35:18
 categories: Coding
 ---
 
-###[Steve Yegge Blog](https://sites.google.com/site/steveyegge2/five-essential-phone-screen-questions)
-http://steve-yegge.blogspot.sg/2008/03/get-that-job-at-google.html
-
-###Area Number One: Coding
-
 {% highlight java %}
 Example 1:   Write a function to reverse a string.
 Example output for "Madam, I'm Adam":   madA m'I ,madaM
@@ -50,3 +45,5 @@ Example output for "Madam, I'm Adam":   madA m'I ,madaM
     return str.toString();
   }
 {% endhighlight %}
+
+{% include cs_copyright.html %}

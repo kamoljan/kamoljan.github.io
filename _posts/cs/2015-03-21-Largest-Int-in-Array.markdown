@@ -5,25 +5,11 @@ date:   2015-03-21 20:35:18
 categories: Coding
 ---
 
-###[Steve Yegge Blog](https://sites.google.com/site/steveyegge2/five-essential-phone-screen-questions)
-http://steve-yegge.blogspot.sg/2008/03/get-that-job-at-google.html
-
-###Area Number One: Coding
-
 {% highlight text %}
 Example 6:  Find the largest int value in an int array.
 {% endhighlight %}
 
 {% highlight java %}
-  int b[] = new int[100000000];
-
-  @Before public void setUp() throws Exception {
-    myClass = new MyClass();
-    Random random = new Random();
-    for (int i = 0; i < b.length; i++) {
-      b[i] = random.nextInt();
-    }
-  }
 
   // 31378000-39787000
   int largestIntInArrayFaster(int a[]) {
@@ -54,6 +40,21 @@ Example 6:  Find the largest int value in an int array.
     return max;
   }
 
+{% endhighlight %}
+
+### Test
+
+{% highlight java %}
+  int b[] = new int[100000000];
+
+  @Before public void setUp() throws Exception {
+    myClass = new MyClass();
+    Random random = new Random();
+    for (int i = 0; i < b.length; i++) {
+      b[i] = random.nextInt();
+    }
+  }
+
   // 962296 vs 962304
   @Test public void memoryConsumption() {
     System.out.println("================== MEMORY ========================");
@@ -79,3 +80,5 @@ Example 6:  Find the largest int value in an int array.
     System.out.println("==================================================");
   }
 {% endhighlight %}
+
+{% include cs_copyright.html %}

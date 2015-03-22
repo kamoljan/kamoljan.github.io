@@ -5,11 +5,6 @@ date:   2015-03-21 14:35:18
 categories: Coding
 ---
 
-###[Steve Yegge Blog](https://sites.google.com/site/steveyegge2/five-essential-phone-screen-questions)
-http://steve-yegge.blogspot.sg/2008/03/get-that-job-at-google.html
-
-###Area Number One: Coding
-
 {% highlight text %}
 Example 1:   Write a function that sums up integers from a text file, one int per line.
 {% endhighlight %}
@@ -23,4 +18,7 @@ Example 1:   Write a function that sums up integers from a text file, one int pe
       System.out.print(i + " ");
     }
   }
+
 {% endhighlight %}
+
+{% include cs_copyright.html %}

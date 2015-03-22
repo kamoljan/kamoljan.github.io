@@ -5,10 +5,6 @@ date:   2015-03-17 14:35:18
 categories: Coding
 ---
 
-###[Steve Yegge Blog](https://sites.google.com/site/steveyegge2/five-essential-phone-screen-questions)
-
-###Area Number One: Coding
-
 {% highlight java %}
 Example 2:  Write function to compute Nth fibonacci number.
 Input:  1, 2, 3, 4, 5
@@ -58,3 +54,5 @@ Output: 0, 1, 1, 2, 3
     printf ( "%d\n", fib(10) );
   }
 {% endhighlight %}
+
+{% include cs_copyright.html %}
