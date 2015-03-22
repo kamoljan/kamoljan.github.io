@@ -5,9 +5,7 @@ date:   2015-03-21 14:35:18
 categories: Coding
 ---
 
-{% highlight text %}
-Example 1:   Write a function that sums up integers from a text file, one int per line.
-{% endhighlight %}
+#### Example 4:   Write a function that sums up integers from a text file, one int per line.
 
 {% highlight java %}
   long sumIntsFromFile(String fileName) {

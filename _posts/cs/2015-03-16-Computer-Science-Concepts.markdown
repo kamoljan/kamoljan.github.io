@@ -5,8 +5,8 @@ date:   2015-03-16 14:35:18
 categories: Coding
 ---
 
+#### Example 1:   Write a function to reverse a string
 {% highlight java %}
-Example 1:   Write a function to reverse a string.
 Example output for "Madam, I'm Adam":   madA m'I ,madaM
 {% endhighlight %}
 

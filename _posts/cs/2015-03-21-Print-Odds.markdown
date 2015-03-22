@@ -5,9 +5,7 @@ date:   2015-03-21 14:35:18
 categories: Coding
 ---
 
-{% highlight text %}
-Example 1:   Write a function that sums up integers from a text file, one int per line.
-{% endhighlight %}
+#### Example 5:  Write function to print the odd numbers from 1 to 99.
 
 {% highlight java %}
   void printOdds(int a, int b) {

@@ -5,9 +5,7 @@ date:   2015-03-21 20:35:18
 categories: Coding
 ---
 
-{% highlight text %}
-Example 6:  Find the largest int value in an int array.
-{% endhighlight %}
+#### Example 6:  Find the largest int value in an int array.
 
 {% highlight java %}
 

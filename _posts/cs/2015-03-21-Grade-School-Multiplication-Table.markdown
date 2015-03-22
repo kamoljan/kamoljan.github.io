@@ -5,8 +5,9 @@ date:   2015-03-21 14:35:18
 categories: Coding
 ---
 
+#### Example 3: Print out the grade-school multiplication table up to 12x12
+
 {% highlight text %}
-Example 1: Print out the grade-school multiplication table up to 12x12
 Example output:
    1   2   3   4   5   6   7   8   9  10  11  12
    2   4   6   8  10  12  14  16  18  20  22  24

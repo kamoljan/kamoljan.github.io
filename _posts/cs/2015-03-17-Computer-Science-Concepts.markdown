@@ -5,13 +5,12 @@ date:   2015-03-17 14:35:18
 categories: Coding
 ---
 
-{% highlight java %}
-Example 2:  Write function to compute Nth fibonacci number.
+#### Example 2: Write function to compute Nth fibonacci number.
+{% highlight text %}
 Input:  1, 2, 3, 4, 5
         |  |  |  |  |
         v  v  v  v  v
 Output: 0, 1, 1, 2, 3
-
 {% endhighlight %}
 
 {% highlight java %}
@@ -35,6 +34,7 @@ Output: 0, 1, 1, 2, 3
 {% endhighlight %}
 
 #### Steve Yegge Java and C/C++ solutions
+
 {% highlight java %}
   static long fib(int n) {
     return n <= 1 ? n : fib(n-1) + fib(n-2);
