@@ -44,7 +44,7 @@ expected worst-case space complexity is O(N), beyond input storage (not counting
 Elements of input arrays can be modified.
 {% endhighlight %}
 
-###Solution
+###Solution in Python
 
 {% highlight python %}
 def solution(A):
@@ -58,3 +58,60 @@ def solution(A):
                 return 0
     return 1
 {% endhighlight %}
+
+###Solution in Java
+
+{% highlight java %}
+import java.util.HashMap;
+import java.util.Map;
+
+public class MyClass {
+  private static final int MAX_LENGTH = 100000;
+
+  public int solution(int[] A) {
+    Map<Integer, Boolean> hashMap = new HashMap<Integer, Boolean>();
+    long len = A.length;
+    if (len > MAX_LENGTH) {
+      return -1;
+    }
+    long actSum = 0;
+    long expSum = len * (len + 1) / 2; // sum(1, 2, .. n) => n(n+1)/2
+    for (int a : A) {
+      actSum = actSum + a;
+      Boolean isThere = hashMap.get(a);
+      if (isThere == null) {
+        hashMap.put(a, true);
+      } else {
+        return 0;
+      }
+    }
+    return actSum == expSum ? 1 : 0;
+  }
+}
+{% endhighlight %}
+
+Another solution by [Codesays.com](http://codesays.com/2014/solution-to-perm-check-by-codility/)
+{% highlight java %}
+public static int solution(int[] A) {
+        int[] counter = new int [A.length];
+ 
+        for(int i= 0; i< A.length; i++){
+            if (A[i] < 1 || A[i] > A.length) {
+                // Out of range
+                return 0;
+            }
+            else if(counter[A[i]-1] == 1) {
+                // met before
+                return 0;
+            }
+            else {
+                // first time meet
+                counter[A[i]-1] = 1;
+            }
+        }
+        return 1;
+    }
+}
+{% endhighlight %}
+
+{% include codility_copyright.html %}
