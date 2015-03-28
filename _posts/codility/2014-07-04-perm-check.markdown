@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  "Perm Check"
+title:  "Codility: PermCheck"
 date:   2014-07-04 14:35:18
-categories: jekyll update
+categories: codility
 ---
 
 ###Task description
