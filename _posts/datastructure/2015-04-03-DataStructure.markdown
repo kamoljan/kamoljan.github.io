@@ -6,6 +6,7 @@ categories: Data Structure
 ---
 
 #### Stacks
+
 {% highlight java %}
   public void stackIsLifo() {
     Stack stack = new Stack();
@@ -19,7 +20,7 @@ categories: Data Structure
 {% endhighlight %}
 
 Result
-{% highlight test %}
+{% highlight text %}
 3 is gone!
 What left is [1, 2]
 {% endhighlight %}
@@ -38,7 +39,7 @@ What left is [1, 2]
 {% endhighlight %}
 
 Result
-{% highlight test %}
+{% highlight text %}
 1
 [2, 3]
 {% endhighlight %}
